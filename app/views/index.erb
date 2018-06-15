@@ -1,1 +1,78 @@
-<h1> This is a view </h1>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--bootstrap-->
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
+        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <h1>Click the Button!</h1>
+            <form action = "greeting">
+                <input type="submit" class="btn btn-outline-info" value = "Get greeting!">
+            </form>
+            <form action = "food">
+                <input type="submit" class="btn btn-outline-primary" value = "Food Page">
+            </form>
+        </div>
+        
+        <form method="post">
+          <h2> HOW ENVIRONMENTALLY FRIENDLY R U </h2>
+          <!--question one-->
+          <h3> Where? </h3>
+          <!--<form action="#" method="post">-->
+            <p>
+              <label >
+                <input name="location" type="radio" class="with-gap" value = "Scottsdale"/>
+                <span>Scottsdale</span>
+              </label>
+            </p>
+            <p>
+              <label >
+                <input name="location" type="radio" class="with-gap"value = "Phoenix"/>
+                <span>Phoenix</span>
+              </label>
+            </p>
+            <p>
+              <label >
+                <input class="with-gap" name="location" type="radio" value = "Tempe" />
+                <span>Tempe</span>
+              </label>
+            </p>
+           <!--</form> -->
+            <h3> Diet? </h3>
+            <!--<form action="#" method="post">-->
+            <p>
+              <label id = "bottle">
+                <input name="diet" type="radio" class="with-gap" value = "all"/>
+                <span>all</span>
+              </label>
+            </p>
+            <p>
+              <label id= "bottle">
+                <input name="diet" type="radio" class="with-gap"value = "vegan"/>
+                <span>vegan</span>
+              </label>
+            </p>
+            <p>
+              <label id= "bottle">
+                <input class="with-gap" name="diet" type="radio" value = "vegetarian" />
+                <span>vegetarian</span>
+              </label>
+            </p>        
+          <br>
+          <input type="Submit" value="submit">
+
+        </form>
+    </body>
+</html>

@@ -10,4 +10,19 @@ class ApplicationController < Sinatra::Base
   get '/' do
     return erb :index
   end
+  
+  get '/greeting' do 
+    return erb :greeting
+  end 
+  
+  get '/food' do
+    return erb :food
+  end
+  
+  post '/' do 
+
+    @answer = quiz(params[:location], params[:diet])
+
+    return erb :results 
+  end 
 end
